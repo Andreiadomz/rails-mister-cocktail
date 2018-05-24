@@ -1,22 +1,30 @@
-<h1>All Our Cocktails (<%=@cocktails.length %>)</h1>
+<body>
+  <h1 class="text-center"> <%=@cocktails.length %> super amazing mocktails </h1>
 
-<div class="container">
-  <div class="row">
+  <div class="container">
+    <div class="row">
 
-    <% @cocktails.each do |cocktail| %>
-      <div class="col-xs-12 col-sm-4">
+      <% @cocktails.each do |cocktail| %>
+        <div class="col-xs-12 col-sm-4">
 
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
-          <div class="card-category">Popular</div>
-          <div class="card-description">
-            <h2><%= cocktail.name %></h2>
-            <p>Very cool city, the best</p>
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
+            <div class="card-category">Popular</div>
+            <div class="card-description">
+              <h2 ><%= cocktail.name %></h2>
+            </div>
+            <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/andreiadomz">
+            <a class="card-link" href="#" ></a>
           </div>
-          <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
-          <a class="card-link" href="#" ></a>
-        </div>
-    </div>
-    <% end  %>
+      </div>
+      <% end  %>
 
+    </div>
   </div>
-</div>
+
+
+<!--   <div class="class container text-center">
+    <%= link_to "Create a mocktail", new_cocktail_path, class: "btn btn-primary" %>
+  </div> -->
+
+
+</body>
