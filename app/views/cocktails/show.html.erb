@@ -3,6 +3,7 @@
 
   <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
 
+<%= link_to 'Add dose', new_cocktail_dose_path(@cocktail) %>
 
 <div class="row">
     <div class="col-sm-12 col-md-6">
